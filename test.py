@@ -32,7 +32,7 @@ fps = FPS().start()
 while True:
 
 	frame = vs.read()
-	frame = imutils.resize(frame, width=400)
+	frame = imutils.resize(frame, width=1080)
 	print(frame.shape) 
 	(h, w) = frame.shape[:2]
 	resized_image = cv2.resize(frame, (300, 300))
